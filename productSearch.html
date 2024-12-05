@@ -10,7 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/styles.css">
-    <title>Document</title>
+    <title>Product Search</title>
   </head>
   <body class="container">
     <header>
@@ -23,6 +23,36 @@
         </li>
       </ul>
     </header>
+    <main>
+      <h1>Products</h1>
+      <div class="mb-3">
+        <label for="selectProduct"></label>
+        <select name="select" id="selectProduct" style="border-color: aqua;">
+          <option value="" style="margin-inline-start: 0cap;">Select One...</option>
+          <option value="category">Search By Category</option>
+          <option value="all">View All</option>
+        </select>
+      </div>
+      <div class="mb-3" id="categoryDropdown" style="display: none">
+        <label for="selectCategory"></label>
+        <select name="selects" id="selectCategory">
+          <option value="">Select One...</option>
+        </select>
+      </div>
+      <div id="productContainer" style="display: none">
+        <div class="d-flex flex-wrap gap-3 justify-content-center align-items-center" id="viewProducts">
+          <div class="card mb-3" style="width: 30%" id="card">
+            <div class="card-body">
+              <h5 class="card-title" id="productName"></h5>
+              <p class="card-text" id="productId">Id: </p>
+              <p class="card-text" id="unitPrice">Price: $</p>
+              <a href="productDetails.html" class="btn btn-primary">See Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="scripts/productSearch.js"></script>
   </body>
 </html>
+
