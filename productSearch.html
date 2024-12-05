@@ -9,7 +9,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Product Search</title>
   </head>
   <body class="container">
@@ -27,8 +27,8 @@
       <h1>Products</h1>
       <div class="mb-3">
         <label for="selectProduct"></label>
-        <select name="select" id="selectProduct" style="border-color: aqua;">
-          <option value="" style="margin-inline-start: 0cap;">Select One...</option>
+        <select name="select" id="selectProduct" style="border-color: aqua">
+          <option value="" style="margin-inline-start: 0cap">Select One...</option>
           <option value="category">Search By Category</option>
           <option value="all">View All</option>
         </select>
@@ -44,7 +44,7 @@
           <div class="card mb-3" style="width: 30%" id="card">
             <div class="card-body">
               <h5 class="card-title" id="productName"></h5>
-              <p class="card-text" id="productId">Id: </p>
+              <p class="card-text" id="productId">Id:</p>
               <p class="card-text" id="unitPrice">Price: $</p>
               <a href="productDetails.html" class="btn btn-primary">See Details</a>
             </div>
@@ -52,7 +52,7 @@
         </div>
       </div>
     </main>
+    <script src="scripts/api.js"></script>
     <script src="scripts/productSearch.js"></script>
   </body>
 </html>
-

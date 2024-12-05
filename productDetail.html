@@ -9,7 +9,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Document</title>
   </head>
   <body class="container">
@@ -23,6 +23,23 @@
         </li>
       </ul>
     </header>
+    <main>
+      <h1>Details</h1>
+      <div class="card mb-3" id="card">
+        <div class="card-body">
+          <h5 class="card-title" id="productName"></h5>
+          <p class="card-text" id="productId">Id:</p>
+          <p class="card-text" id="unitPrice">Price: $</p>
+          <p class="card-text" id="unitsInStock">Units:</p>
+          <p class="card-text" id="categoryId">Category:</p>
+          <p class="card-text" id="supplier">Supplier:</p>
+          <p class="card-text" id="discontinued">Discontinued:</p>
+
+          <a href="productSearch.html" class="btn btn-primary">Go Back</a>
+        </div>
+      </div>
+    </main>
+    <script src="scripts/api.js"></script>
     <script src="scripts/productDetails.js"></script>
   </body>
 </html>
